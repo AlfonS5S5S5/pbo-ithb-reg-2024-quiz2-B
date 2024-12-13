@@ -20,10 +20,6 @@ public class ArtWork {
         JFrame frame = new JFrame();
         frame.setBounds(0, 0, 500, 700);
 
-        JButton TransactionBtn = new JButton("Transaction");
-        TransactionBtn.setBounds(70, 40, 120, 30);
-        frame.add(TransactionBtn);
-        new ShowArtwork();
 
         Artworks aw2 = ShowArtwork.getArtWorks();
         Users user = new Users();
