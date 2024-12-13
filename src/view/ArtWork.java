@@ -1,7 +1,5 @@
 package view;
 
-import java.io.File;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -46,17 +44,11 @@ public class ArtWork {
         photoLabel.setBounds(690, 80, 240, 300);
         frame.add(photoLabel);
 
-        JButton buyBookBtn = new JButton("Add Artwork");
-        buyBookBtn.setBounds(70, 270, 120, 30);
-        frame.add(buyBookBtn);
+        JButton addArtwork = new JButton("Add Artwork");
+        addArtwork.setBounds(70, 270, 120, 30);
+        frame.add(addArtwork);
 
-        buyBookBtn.addActionListener(e -> {
-            String title = aw2.getTitle();
-            String description = aw2.getDescription();
-            File img = aw2.getImages();
-            int id_User = user.getId_Users();
-            frame.dispose();
-        });
+        
         frame.setLayout(null);
         frame.setVisible(true);
     }
